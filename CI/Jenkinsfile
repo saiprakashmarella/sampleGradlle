@@ -1,0 +1,15 @@
+pipeline {
+
+	agent any
+	
+	stages {
+		
+		stage("Git pull") {
+			
+			steps {
+				
+				git credentialsId: 'git_creds', url: 'https://github.com/saiprakashmarella/sampleGradlle'
+			}
+		}
+	}
+}
