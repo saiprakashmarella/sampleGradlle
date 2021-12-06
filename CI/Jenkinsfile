@@ -16,7 +16,7 @@ pipeline {
 			
 			steps {
 				
-				echo "Build started"
+				sh './gradlew clean build'
 			}
 		}
 	}
