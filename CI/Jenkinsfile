@@ -18,6 +18,7 @@ pipeline {
 				echo "Executing Gradle"
 				withGradle(){
 					sh './gradlew clean build'
+					echo "build successfull"
 				}
 			}
 		}
