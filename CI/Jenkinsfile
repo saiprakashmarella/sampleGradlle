@@ -18,7 +18,6 @@ pipeline {
 				echo "Executing Gradle"
 				withGradle(){
 					sh './gradlew clean build'
-					sh './gradlew bootJar'
 				}
 			}
 		}
