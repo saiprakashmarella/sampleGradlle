@@ -15,8 +15,10 @@ pipeline {
 		stage("Build"){
 			
 			steps {
-				
-				sh './gradlew clean build'
+				echo "Executing Gradle"
+				withGradle(){
+					sh './gradlew clean build'
+				}
 			}
 		}
 	}
