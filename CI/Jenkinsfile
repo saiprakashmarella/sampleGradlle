@@ -11,5 +11,13 @@ pipeline {
 				git credentialsId: 'git_creds', url: 'https://github.com/saiprakashmarella/sampleGradlle'
 			}
 		}
+		
+		stage("Build"){
+			
+			steps {
+				
+				echo "Build started"
+			}
+		}
 	}
 }
